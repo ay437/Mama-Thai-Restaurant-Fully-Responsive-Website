@@ -1,0 +1,351 @@
+/* green color #5DA271 */
+/* red color #81667A */
+
+.info {
+  background: #5DA271;
+}
+
+
+body {
+  font-family: 'Kreon', serif;
+  color: #5DA271;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url(../images/background_2.jpg)center/cover fixed no-repeat;
+}
+
+.primary-color {
+  color: #81667A;
+}
+
+.info h2 {
+  word-spacing: 0.6rem;
+}
+
+.info a {
+  transition: color 2s ease-in-out;
+}
+
+.info a:hover{
+  color: #242424;
+}
+
+/* ######### header ############*/
+
+#header {
+  min-height: calc(100vh - 94px);
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.height-90 {
+  min-height: calc(100vh - 94px);
+}
+
+.banner h1 {
+  border-top: 6px dotted #5DA271;
+  border-bottom: 6px dotted #5DA271;
+  animation: fromLeft;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.main-btn {
+  color: #5DA271;
+  font-size: 2rem;
+  border: 2px solid #5DA271;
+  transition: all 1s ease-in-out;
+}
+
+.main-btn:hover {
+  color: #242424;
+  border: 2px solid #5DA271;
+  background: #5DA271;
+}
+
+.thai-btn{
+  animation: fromRight;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: #5DA271;
+  border-radius: 10px;
+  transition: all 2s ease;
+  animation: fromBottom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.header-link:hover {
+  color: #242424;
+}
+
+@keyframes fromBottom {
+  0%{
+    transform: translateY(-10px)
+  }
+  50%{
+    transform: translateY(10px)
+  }
+  100%{
+    transform: translateY(-10px)
+  }
+}
+
+/*############# navbar ############*/
+
+.navbar{
+  background: #5DA271;
+  padding: 20px 20px;
+  transition: all 1s ease;
+}
+
+.navbar-background{
+  padding: 5px 20px;
+}
+
+.navbar-brand{
+  font-size: 30px;
+  transition: all 1s ease;
+}
+
+.navbar-brand:hover{
+  color: #242424;
+}
+
+.nav-link{
+  color: #242424;
+  text-decoration: none;
+  transition: all 2s ease;
+  font-size: 23px;
+}
+.nav-link:hover{
+  color: #81667A;
+}
+
+.nav-btn{
+  background: transparent;
+  color: #81667A;
+  border: 2px solid #81667A;
+  font-size: 23px;
+  transition: all 2s ease;
+}
+
+.nav-btn:hover{
+  color: #242424;
+  border: 2px solid #242424;
+  transform: rotate(10deg);
+}
+
+.toggler-btn{
+  border: 2px solid #81667A;
+  padding: 5px;
+  transition: all 2s ease;
+}
+
+.bar{
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #81667A;
+  transition: all 0.5s ease;
+}
+
+.change .bar1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.change .bar2{
+  opacity: 0;
+}
+
+.change .bar3{
+  transform: rotate(45deg) translate(-5px,-8px);
+}
+
+/*############### menu items ############*/
+
+.thai-restaurant-description {
+  color: #5DA271;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  border: 2px solid #5DA271;
+  transition: all 1s ease-in-out;
+}
+
+.thai-restaurant-description:hover {
+  color: #242424;
+  border: 2px solid #5DA271;
+  background: #5DA271;
+}
+
+.item-container{
+  position: relative;
+  /* for the link */
+  overflow: hidden;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  transition: all 2s ease;
+}
+
+.item-img{
+  transition: all 2s ease;
+}
+
+.item-container:hover .item-img{
+  transform: scale(1.2);
+}
+
+.item-link{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5DA271;
+  font-size: 2rem;
+  border-top: 3px solid #5DA271;
+  border-bottom: 3px solid #5DA271;
+  transition: all 2s ease;
+  opacity: 0;
+}
+
+.item-link:hover {
+  opacity: 1;
+}
+
+.item-link:hover{
+  color: #242424;
+  border: 3px solid #5DA271;
+  background: #5DA271;
+}
+
+.item-container:hover {
+  outline: 10px solid #5DA271;
+  outline-offset: 0.2rem;
+}
+
+/*############ Menu ############*/
+
+#menu {
+  background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),
+  url(../images/banner.jpg)center/cover fixed no-repeat;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 40px;
+}
+.special{
+  border: 3px solid  #81667A;
+  position: relative;
+}
+
+.special-text{
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: #81667A;
+  padding: 0 0.4rem;
+}
+
+/*############### contact ##############*/
+
+.height-60{
+  min-height: 60vh;
+}
+
+#contact .card{
+  background: rgba(0,0,0,0.5);
+  transition: all 2s ease;
+}
+
+#contact .card:hover{
+  background: rgba(0,0,0,0.8);
+}
+
+#contact .card-header{
+  color: #5DA271;
+}
+
+#contact .input-group-text{
+  background: #5DA271;
+  border-color: #5DA271;
+  color: #242424;
+}
+
+#contact .card input{
+  color: #606060;
+}
+
+#contact .card input::placeholder{
+  color: #606060;
+}
+
+.contact-btn{
+  color: #5DA271;
+  border-color: #5DA271;
+  background: transparent;
+  transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover{
+  background: #c9c1ac;
+  color: #5DA271;
+  border-color: #c9c1ac;
+}
+
+/*############ footer #############*/
+
+#back-to-top{
+  background: #5DA271;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.scrollTop{
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+}
